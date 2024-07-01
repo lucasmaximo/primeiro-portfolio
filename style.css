@@ -1,0 +1,25 @@
+body {
+    background-color: #1B355D;
+    color: #F2F2F2;
+}
+
+strong {
+    color: #F2D7B6;
+}
+
+a.button {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10x;
+    background-color: #F2F2F2;
+    color: #1B355D;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: background-color 0.5s ease;
+}
+a.button:hover{
+    background-color: #F2D7B6;
+}
+

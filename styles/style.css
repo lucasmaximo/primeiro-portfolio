@@ -1,5 +1,14 @@
+/* Estilização global */
 @import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
 
+:root {
+    --cor-primaria: #112D4E;
+    --cor-secundaria: #F2F2F2;
+    --cor-terciaria: #80C4E9;
+
+    --fonte-primaria: "Krona One", sans-serif;
+    --fonte-secundaria: "Montserrat", sans-serif;
+}
 * {
     margin: 0;
     padding: 0;
@@ -7,11 +16,13 @@
 body {
     /*height: 100vh;  faz com que a página ocupe 100% da altura visível da tela no navegador */
     box-sizing: border-box; /* garante que nenhum elemento exceda o tamanho lateral da página */
-    background-color: #1B355D;
-    color: #F2F2F2;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
 }
+
+/* Estilização da página Início e possíveis sobreposições anteriores */
 .cabecalho {
-    border-bottom: 1px solid #F2F2F2;
+    border-bottom: 1px solid var(--cor-secundaria);
 }
 .cabecalho__menu {
     display: flex;
@@ -20,27 +31,27 @@ body {
     gap: 80px;
 }
 .cabecalho__menu__link {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-primaria);
     font-size: 16px;
     font-weight: 500;
-    color: #F2F2F2;
+    color: var(--cor-secundaria);
     text-decoration: none;
     padding: 1.5%;
 }
 .cabecalho__menu__link:hover {
-    background-color: #F2F2F2;
-    color: #1B355D;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
     transition: background-color 0.5s ease;
 }
 .cabecalho__menu__link.active {
-    background-color: #F2F2F2;
-    color: #1B355D;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
 }
 .apresentacao {
     padding: 3.5% 10% 3% 10% ;
     display: flex;
     align-items: center;
-    justify-content: space-bet;
+    justify-content: space-around;
 }
 .apresentacao__conteudo {
     width: 700px;
@@ -49,17 +60,17 @@ body {
     gap: 40px 0;
 }
 .apresentacao__conteudo__titulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-primaria);
     font-size: 36px;
     text-align: center;
 }
 .apresentacao__conteudo__texto {
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 24px;
     text-align: center;
 }
 .titulo-destaque {
-    color: #F2D7B6;
+    color: var(--cor-terciaria);
 }
 .apresentacao__links {
     display: flex;
@@ -69,35 +80,35 @@ body {
     justify-content: space-between;
 }
 .apresentacao__links__subtitulo {
-    font-family: "Krona One", sans-serif;
+    font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 20px;
 }
 .apresentacao__links__link {
-    background-color: #1B355D;
-    color: #F2F2F2;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
     text-align: center;
     width: 378px;
     padding: 21.5px 0;
     text-decoration: none;
     border-radius: 10px;
-    border: 2px solid #F2F2F2;
-    font-family: "Montserrat", sans-serif;
+    border: 2px solid var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
     font-weight: 600;
     transition: background-color 0.5s ease;
 }
 .apresentacao__links__link:hover {
-    background-color: #F2F2F2;
-    color: #1B355D;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
 }
-img {
+.imagem__inicio {
     height: 600px;
     width: 600px;
     border: 1px solid black;
     border-radius: 15px;
     transition: filter 0.5s ease;
 }
-img:hover {
+.imagem__inicio:hover {
     filter: brightness(0.7);
 }
 .rodape {
@@ -105,10 +116,10 @@ img:hover {
     align-items: center;
     justify-content: space-evenly;
     gap: 20px;
-    font-family: "Montserrat", sans-serif;
+    font-family: var(--fonte-secundaria);
     font-size: 22px;
-    background-color: #F2F2F2;
-    color: #1B355D;
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
     padding: 24px;
 }
 .rodape__nome {
@@ -118,9 +129,41 @@ img:hover {
     display: flex;
     flex-direction: column;
     text-align: center;
-    color: #1B355D;
+    color: var(--cor-primaria);
     font-size: 18px;
 }
 .rodape__contatos__contato {
     font-size: 14px;
+}
+
+/* Estilização da página Sobre Mim e possíveis sobreposições anteriores */
+.apresentacao__sobremim {
+    padding: 3.5% 9% 3% 9% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.apresentacao__conteudo__sobremim {
+    width: 1000px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px 0;
+}
+.apresentacao__conteudo__texto__sobremim {
+    font-family: var(--fonte-secundaria);
+    font-size: 19px;
+    text-align: justify;
+}
+.apresentacao__conteudo__texto__sobremim.separador {
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+.imagem__sobremim {
+    height: 300px;
+    width: 300px;
+    border: 1px solid black;
+    border-radius: 15px;
+    transition: filter 0.5s ease;
+}
+.imagem__sobremim:hover {
+    filter: brightness(0.7);
 }

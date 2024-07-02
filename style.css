@@ -5,19 +5,19 @@
     padding: 0;
 }
 body {
-    /* height: 100vh; faz com que a página ocupe 100% da altura visível da tela no navegador */
+    height: 100vh; /* faz com que a página ocupe 100% da altura visível da tela no navegador */
     box-sizing: border-box; /* garante que nenhum elemento exceda o tamanho lateral da página */
     background-color: #1B355D;
     color: #F2F2F2;
 }
 .apresentacao {
-    margin: 5% 15% 3% 15% ;
+    margin: 4% 11% 3% 11% ;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 .apresentacao__conteudo {
-    width: 615px;
+    width: 700px;
     display: flex;
     flex-direction: column;
     gap: 40px 0;
@@ -25,37 +25,54 @@ body {
 .apresentacao__conteudo__titulo {
     font-family: "Krona One", sans-serif;
     font-size: 36px;
+    text-align: center;
 }
 .apresentacao__conteudo__texto {
     font-family: "Montserrat", sans-serif;
     font-size: 24px;
+    text-align: center;
 }
 .titulo-destaque {
     color: #F2D7B6;
 }
 .apresentacao__links {
     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
     justify-content: space-between;
 }
-.apresentacao__links_link {
-    background-color: #F2F2F2;
-    color: #1B355D;
+.apresentacao__links__subtitulo {
+    font-family: "Krona One", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+}
+.apresentacao__links__link {
+    background-color: #1B355D;
+    color: #F2F2F2;
     text-align: center;
-    width: 280px;
+    width: 378px;
     padding: 21.5px 0;
     text-decoration: none;
-    border-radius: 15px;
+    border-radius: 10px;
+    border: 2px solid #F2F2F2;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     transition: background-color 0.5s ease;
 }
-.apresentacao__links_link:hover{
-    background-color: #F2D7B6;
+.apresentacao__links__link:hover {
+    background-color: #F2F2F2;
+    color: #1B355D;
 }
 img {
-    height: 500px;
-    width: 500px;
+    height: 600px;
+    width: 600px;
     border: 1px solid black;
+    border-radius: 15px;
+    transition: filter 0.5s ease;
+}
+img:hover {
+    filter: brightness(0.7);
 }
 .rodape {
     font-family: "Montserrat", sans-serif;
@@ -81,5 +98,4 @@ img {
     font-size: 14px;
     font-weight: 500;
     color: #F2F2F2;
-
 }

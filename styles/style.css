@@ -5,16 +5,42 @@
     padding: 0;
 }
 body {
-    height: 100vh; /* faz com que a página ocupe 100% da altura visível da tela no navegador */
+    /*height: 100vh;  faz com que a página ocupe 100% da altura visível da tela no navegador */
     box-sizing: border-box; /* garante que nenhum elemento exceda o tamanho lateral da página */
     background-color: #1B355D;
     color: #F2F2F2;
 }
-.apresentacao {
-    margin: 4% 11% 3% 11% ;
+.cabecalho {
+    border-bottom: 1px solid #F2F2F2;
+}
+.cabecalho__menu {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 80px;
+}
+.cabecalho__menu__link {
+    font-family: "Krona One", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    color: #F2F2F2;
+    text-decoration: none;
+    padding: 1.5%;
+}
+.cabecalho__menu__link:hover {
+    background-color: #F2F2F2;
+    color: #1B355D;
+    transition: background-color 0.5s ease;
+}
+.cabecalho__menu__link.active {
+    background-color: #F2F2F2;
+    color: #1B355D;
+}
+.apresentacao {
+    padding: 3.5% 10% 3% 10% ;
+    display: flex;
+    align-items: center;
+    justify-content: space-bet;
 }
 .apresentacao__conteudo {
     width: 700px;
@@ -75,27 +101,26 @@ img:hover {
     filter: brightness(0.7);
 }
 .rodape {
-    font-family: "Montserrat", sans-serif;
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 22px;
+    background-color: #F2F2F2;
+    color: #1B355D;
+    padding: 24px;
 }
-.rodape-nome {
+.rodape__nome {
     font-size: 20px;
-    font-weight: bold;
-    margin-bottom: 0.3%;
 }
-.rodape-contatos {
+.rodape__contatos {
     display: flex;
     flex-direction: column;
     text-align: center;
-    margin-bottom: 0.3%;
-    color: #F2D7B6;
-    font-weight: 600;
+    color: #1B355D;
+    font-size: 18px;
 }
-.rodape-contatos-contato {
+.rodape__contatos__contato {
     font-size: 14px;
-    font-weight: 500;
-    color: #F2F2F2;
 }

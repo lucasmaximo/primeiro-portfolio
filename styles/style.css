@@ -19,7 +19,6 @@ body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
-
 /* Estilização da página Início e possíveis sobreposições anteriores */
 .cabecalho {
     border-bottom: 1px solid var(--cor-secundaria);
@@ -137,33 +136,33 @@ body {
 }
 
 /* Estilização da página Sobre Mim e possíveis sobreposições anteriores */
-.apresentacao__sobremim {
+.sobremim-apresentacao {
     padding: 3.5% 9% 3% 9% ;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.apresentacao__conteudo__sobremim {
+.sobremim-apresentacao__conteudo {
     width: 1000px;
     display: flex;
     flex-direction: column;
     gap: 25px 0;
 }
-.apresentacao__conteudo__texto__sobremim {
+.sobremim-apresentacao__conteudo__texto {
     font-family: var(--fonte-secundaria);
-    font-size: 19px;
+    font-size: 18px;
     text-align: justify;
 }
-.apresentacao__conteudo__texto__sobremim.separador {
+.sobremim-apresentacao__conteudo__texto.separador {
     border-bottom: 1px solid var(--cor-secundaria);
 }
-.imagem__sobremim {
+.sobremim-imagem {
     height: 300px;
     width: 300px;
     border: 1px solid black;
     border-radius: 15px;
     transition: filter 0.5s ease;
 }
-.imagem__sobremim:hover {
+.sobremim-imagem:hover {
     filter: brightness(0.7);
 }

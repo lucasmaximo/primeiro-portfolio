@@ -19,6 +19,7 @@ body {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
 }
+
 /* Estilização da página Início e possíveis sobreposições anteriores */
 .cabecalho {
     border-bottom: 1px solid var(--cor-secundaria);
@@ -46,24 +47,24 @@ body {
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
 }
-.apresentacao {
+.corpo {
     padding: 3.5% 10% 3% 10% ;
     display: flex;
     align-items: center;
     justify-content: space-around;
 }
-.apresentacao__conteudo {
+.corpo__conteudo {
     width: 700px;
     display: flex;
     flex-direction: column;
     gap: 40px 0;
 }
-.apresentacao__conteudo__titulo {
+.corpo__conteudo__titulo {
     font-family: var(--fonte-primaria);
     font-size: 36px;
     text-align: center;
 }
-.apresentacao__conteudo__texto {
+.corpo__conteudo__texto {
     font-family: var(--fonte-secundaria);
     font-size: 24px;
     text-align: center;
@@ -71,19 +72,19 @@ body {
 .titulo-destaque {
     color: var(--cor-terciaria);
 }
-.apresentacao__links {
+.corpo__links {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
     justify-content: space-between;
 }
-.apresentacao__links__subtitulo {
+.corpo__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
     font-size: 20px;
 }
-.apresentacao__links__link {
+.corpo__links__link {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     text-align: center;
@@ -96,7 +97,7 @@ body {
     font-weight: 600;
     transition: background-color 0.5s ease;
 }
-.apresentacao__links__link:hover {
+.corpo__links__link:hover {
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
 }
@@ -136,24 +137,24 @@ body {
 }
 
 /* Estilização da página Sobre Mim e possíveis sobreposições anteriores */
-.sobremim-apresentacao {
+.sobremim-corpo {
     padding: 3.5% 9% 3% 9% ;
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-.sobremim-apresentacao__conteudo {
+.sobremim-corpo__conteudo {
     width: 1000px;
     display: flex;
     flex-direction: column;
     gap: 25px 0;
 }
-.sobremim-apresentacao__conteudo__texto {
+.sobremim-corpo__conteudo__texto {
     font-family: var(--fonte-secundaria);
     font-size: 18px;
     text-align: justify;
 }
-.sobremim-apresentacao__conteudo__texto.separador {
+.sobremim-corpo__conteudo__texto.separador {
     border-bottom: 1px solid var(--cor-secundaria);
 }
 .sobremim-imagem {
@@ -165,4 +166,61 @@ body {
 }
 .sobremim-imagem:hover {
     filter: brightness(0.7);
+}
+
+/* Estilização da página Portfólio e possíveis sobreposições anteriores */
+.portfolio-corpo {
+    padding: 3.5% 10% 3% 10%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.portfolio-corpo__conteudo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+.portfolio-corpo__conteudo__titulo {
+    font-family: var(--fonte-primaria);
+    font-size: 30px;
+    text-align: center;
+}
+.portfolio-corpo__conteudo__subtitulo {
+    font-family: var(--fonte-secundaria);
+    font-size: 24px;
+    text-align: center;
+}
+.portfolio-corpo__conteudo__texto {
+    font-family: var(--fonte-secundaria);
+    font-size: 18px;
+    text-align: center;
+}
+.portfolio-corpo__conteudo__lista {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    border-bottom: 1px solid var(--cor-secundaria);
+}
+.portfolio-corpo__conteudo__link {
+    display: inline-block;
+    background-color: var(--cor-primaria);
+    color: var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    text-align: center;
+    width: 150px;
+    padding: 2px;
+    text-decoration: none;
+    border-radius: 7px;
+    border: 2px solid var(--cor-secundaria);
+    transition: background-color 0.5s ease;
+}
+.portfolio-corpo__conteudo__link:hover {
+    background-color: var(--cor-secundaria);
+    color: var(--cor-primaria);
 }

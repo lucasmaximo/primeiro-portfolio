@@ -27,12 +27,13 @@ body {
 .cabecalho__menu {
     display: flex;
     align-items: center;
+    text-align: center;
     justify-content: center;
-    gap: 80px;
+    gap: 40px;
 }
 .cabecalho__menu__link {
     font-family: var(--fonte-primaria);
-    font-size: 16px;
+    font-size: 1rem;
     font-weight: 500;
     color: var(--cor-secundaria);
     text-decoration: none;
@@ -48,25 +49,26 @@ body {
     color: var(--cor-primaria);
 }
 .corpo {
-    padding: 3.5% 10% 3% 10% ;
+    padding: 3.5% 3% 3% 3%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 70px;
 }
 .corpo__conteudo {
-    width: 700px;
+    width: 50%;
     display: flex;
     flex-direction: column;
     gap: 40px 0;
 }
 .corpo__conteudo__titulo {
     font-family: var(--fonte-primaria);
-    font-size: 36px;
+    font-size: 2.25rem;
     text-align: center;
 }
 .corpo__conteudo__texto {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
 }
 .titulo-destaque {
@@ -82,13 +84,13 @@ body {
 .corpo__links__subtitulo {
     font-family: var(--fonte-primaria);
     font-weight: 400;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 .corpo__links__link {
     background-color: var(--cor-primaria);
     color: var(--cor-secundaria);
     text-align: center;
-    width: 378px;
+    width: 50%;
     padding: 21.5px 0;
     text-decoration: none;
     border-radius: 10px;
@@ -102,8 +104,7 @@ body {
     color: var(--cor-primaria);
 }
 .imagem__inicio {
-    height: 600px;
-    width: 600px;
+    width: 40%;
     border: 1px solid black;
     border-radius: 15px;
     transition: filter 0.5s ease;
@@ -117,49 +118,49 @@ body {
     justify-content: space-evenly;
     gap: 20px;
     font-family: var(--fonte-secundaria);
-    font-size: 22px;
+    font-size: 1.375rem;
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
     padding: 24px;
 }
 .rodape__nome {
-    font-size: 20px;
+    font-size: 1.375rem;
 }
 .rodape__contatos {
     display: flex;
     flex-direction: column;
     text-align: center;
     color: var(--cor-primaria);
-    font-size: 18px;
+    font-size: 1.125rem;
 }
 .rodape__contatos__contato {
-    font-size: 14px;
+    font-size: 0.875rem;
 }
 
 /* Estilização da página Sobre Mim e possíveis sobreposições anteriores */
 .sobremim-corpo {
-    padding: 3.5% 9% 3% 9% ;
+    padding: 3.5% 9% 3% 9%;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    gap: 40px;
 }
 .sobremim-corpo__conteudo {
-    width: 1000px;
+    width: 100%;
     display: flex;
     flex-direction: column;
     gap: 25px 0;
 }
 .sobremim-corpo__conteudo__texto {
     font-family: var(--fonte-secundaria);
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: justify;
 }
 .sobremim-corpo__conteudo__texto.separador {
     border-bottom: 1px solid var(--cor-secundaria);
 }
 .sobremim-imagem {
-    height: 300px;
-    width: 300px;
+    width: 25%;
     border: 1px solid black;
     border-radius: 15px;
     transition: filter 0.5s ease;
@@ -186,17 +187,17 @@ body {
 }
 .portfolio-corpo__conteudo__titulo {
     font-family: var(--fonte-primaria);
-    font-size: 30px;
+    font-size: 1.875rem;
     text-align: center;
 }
 .portfolio-corpo__conteudo__subtitulo {
     font-family: var(--fonte-secundaria);
-    font-size: 24px;
+    font-size: 1.5rem;
     text-align: center;
 }
 .portfolio-corpo__conteudo__texto {
     font-family: var(--fonte-secundaria);
-    font-size: 18px;
+    font-size: 1.125rem;
     text-align: center;
 }
 .portfolio-corpo__conteudo__lista {
@@ -223,4 +224,24 @@ body {
 .portfolio-corpo__conteudo__link:hover {
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
+}
+
+@media (max-width: 1200px){
+    .corpo {
+        flex-direction: column-reverse;
+        gap: 40px;
+    }
+    .corpo__conteudo {
+        width: 95%;
+    }
+    .sobremim-corpo {
+        flex-direction: column;
+        gap: 30px;
+    }
+    .sobremim-imagem {
+        width: 40%;
+    }
+    .corpo__links__link {
+        width: 100%;
+    }
 }

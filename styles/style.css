@@ -5,7 +5,6 @@
     --cor-primaria: #112D4E;
     --cor-secundaria: #F2F2F2;
     --cor-terciaria: #80C4E9;
-
     --fonte-primaria: "Krona One", sans-serif;
     --fonte-secundaria: "Montserrat", sans-serif;
 }
@@ -87,7 +86,7 @@ body {
     font-size: 1.25rem;
 }
 .corpo__links__link {
-    background-color: var(--cor-primaria);
+    background-color: transparent;
     color: var(--cor-secundaria);
     text-align: center;
     width: 50%;
@@ -209,7 +208,7 @@ body {
 }
 .portfolio-corpo__conteudo__link {
     display: inline-block;
-    background-color: var(--cor-primaria);
+    background-color: transparent;
     color: var(--cor-secundaria);
     font-family: var(--fonte-secundaria);
     font-weight: 600;

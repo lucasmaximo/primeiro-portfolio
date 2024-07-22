@@ -224,6 +224,19 @@ body {
     background-color: var(--cor-secundaria);
     color: var(--cor-primaria);
 }
+.portfolio-corpo__links__link {
+    background-color: transparent;
+    color: var(--cor-secundaria);
+    text-align: center;
+    width: 25%;
+    padding: 21.5px 0;
+    text-decoration: none;
+    border-radius: 10px;
+    border: 2px solid var(--cor-secundaria);
+    font-family: var(--fonte-secundaria);
+    font-weight: 600;
+    transition: background-color 0.5s ease;
+}
 
 @media (max-width: 1200px){
     .corpo {
